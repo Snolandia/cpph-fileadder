@@ -11,14 +11,19 @@ Extension settings currently allow for:
 - Open Cpp file after creation
 - Open H file after creation
 
+Right Clicking On Folder And Selecting "New .cpp/.h file"
 ![feature X](openingContextMenu.png)
 
+Entering File Name
 ![feature X](enterFileName.png)
 
+Example Name Entered, Hit "Enter"
 ![feature X](exampleName.png)
 
+Example H File Created
 ![feature X](exampleHeader.png)
 
+Example CPP File Created
 ![feature X](exampleCppFile.png)
 
 <!-- ## Requirements
