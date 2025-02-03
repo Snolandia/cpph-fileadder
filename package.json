@@ -1,0 +1,72 @@
+{
+  "name": "cpph-fileadder",
+  "displayName": "cppH_FileAdder",
+  "description": "Adds a context menu item to folders to add a Cpp and a H file at the same time",
+  "icon": "cpphIcont.png",
+  "repository": "https://github.com/Snolandia/cpph-fileadder",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "cpp-organizer.addCppHFile",
+        "title": "New .cpp/.h file"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "when": "explorerResourceIsFolder",
+          "command": "cpp-organizer.addCppHFile",
+          "group": "1_cppOrganizer"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "cppOrganizer",
+      "properties": {
+        "cppOrganizer.createIncludeGuards": {
+          "type": "boolean",
+          "default": true,
+          "description": "When creating an .h file, also add include guards to the file."
+        },
+        "cppOrganizer.openHeaderFileAfterCreation": {
+          "type": "boolean",
+          "default": true,
+          "description": "When creating an .h file, open that file after it has been created."
+        },
+        "cppOrganizer.openCppFileAfterCreation": {
+          "type": "boolean",
+          "default": true,
+          "description": "When creating a .cpp file, open that file after it has been created."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.96.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.17.0",
+    "@typescript-eslint/parser": "^8.17.0",
+    "eslint": "^9.16.0",
+    "typescript": "^5.7.2",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
