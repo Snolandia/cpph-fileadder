@@ -12,9 +12,13 @@ Extension settings currently allow for:
 - Open H file after creation
 
 ![feature X](openingContextMenu.png)
+
 ![feature X](enterFileName.png)
+
 ![feature X](exampleName.png)
+
 ![feature X](exampleHeader.png)
+
 ![feature X](exampleCppFile.png)
 
 <!-- ## Requirements
