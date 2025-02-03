@@ -2,6 +2,8 @@
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
 import { CreateCppHFile } from './createCppHFile';
+import { CreateCHFile } from './createCHFile';
+import { CreateCppHppFile } from './createCppHppFile';
 
 // This method is called when your extension is activated
 // Your extension is activated the very first time the command is executed
@@ -11,7 +13,9 @@ export function activate(context: vscode.ExtensionContext) {
 	// This line of code will only be executed once when your extension is activated
 	console.log('Congratulations, your extension "cpph-fileadder" is now active!');
 
+	CreateCHFile(context);
 	CreateCppHFile(context);
+	CreateCppHppFile(context);
 }
 
 // This method is called when your extension is deactivated

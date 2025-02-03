@@ -2,7 +2,13 @@
 
 ## Features
 
-When right clicking a folder in folder explorer, adds an option to add a cpp/h file at the same time. The cpp file automatically has the h file as an #include
+Adds context menu items to:
+-add c/h file
+-add cpp/h file
+-add cpp/hpp file
+
+When right clicking a folder in folder explorer, adds an option to add a (c/h), (cpp/h), or (cpp/hpp) file at the same time. The c(pp) file automatically has the h(pp) file as an #include
+
 
 Extension settings currently allow for:
 - Automatically create include guards

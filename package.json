@@ -1,12 +1,13 @@
 {
   "name": "cpph-fileadder",
-  "displayName": "cppH_FileAdder",
+  "displayName": "Cpp/H File Creator",
   "description": "Adds a context menu item to folders to add a Cpp and a H file at the same time",
   "icon": "cpphIcont.png",
   "repository": "https://github.com/Snolandia/cpph-fileadder",
   "version": "1.0.0",
 	"license": "MIT",
 	"author": "Snolandia",
+  "publisher": "Snolandia",
   "engines": {
     "vscode": "^1.96.0"
   },
@@ -18,15 +19,33 @@
   "contributes": {
     "commands": [
       {
+        "command": "cpp-organizer.addCHFile",
+        "title": "New .c/.h file"
+      },
+      {
         "command": "cpp-organizer.addCppHFile",
         "title": "New .cpp/.h file"
+      },
+      {
+        "command": "cpp-organizer.addCppHppFile",
+        "title": "New .cpp/.hpp file"
       }
     ],
     "menus": {
       "explorer/context": [
         {
           "when": "explorerResourceIsFolder",
+          "command": "cpp-organizer.addCHFile",
+          "group": "1_cppOrganizer"
+        },
+        {
+          "when": "explorerResourceIsFolder",
           "command": "cpp-organizer.addCppHFile",
+          "group": "1_cppOrganizer"
+        },
+        {
+          "when": "explorerResourceIsFolder",
+          "command": "cpp-organizer.addCppHppFile",
           "group": "1_cppOrganizer"
         }
       ]
@@ -37,17 +56,17 @@
         "cppOrganizer.createIncludeGuards": {
           "type": "boolean",
           "default": true,
-          "description": "When creating an .h file, also add include guards to the file."
+          "description": "When creating an .h(pp) file, also add include guards to the file."
         },
         "cppOrganizer.openHeaderFileAfterCreation": {
           "type": "boolean",
           "default": true,
-          "description": "When creating an .h file, open that file after it has been created."
+          "description": "When creating an .h(pp) file, open that file after it has been created."
         },
         "cppOrganizer.openCppFileAfterCreation": {
           "type": "boolean",
           "default": true,
-          "description": "When creating a .cpp file, open that file after it has been created."
+          "description": "When creating a .c(pp) file, open that file after it has been created."
         }
       }
     }
