@@ -1,7 +1,7 @@
 {
   "name": "cpph-fileadder",
-  "displayName": "Cpp/H File Creator",
-  "description": "Adds a context menu item to folders to add a Cpp and a H file at the same time",
+  "displayName": "(C/Cpp)/(H/Hpp) File Creator",
+  "description": "Adds a context menu item to folders to add a C/Cpp and a H/Hpp file at the same time",
   "icon": "cpphIcont.png",
   "repository": "https://github.com/Snolandia/cpph-fileadder",
   "version": "1.0.0",
