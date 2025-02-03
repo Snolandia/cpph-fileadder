@@ -1,7 +1,5 @@
 # cpph-fileadder README
 
-This is the README for your extension "cpph-fileadder". After writing up a brief description, we recommend including the following sections.
-
 ## Features
 
 When right clicking a folder in folder explorer, adds an option to add a cpp/h file at the same time. The cpp file automatically has the h file as an #include
