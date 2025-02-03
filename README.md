@@ -1,5 +1,3 @@
-# cpph-fileadder README
-
 ## Features
 
 Adds context menu items to:
@@ -12,8 +10,8 @@ When right clicking a folder in folder explorer, adds an option to add a (c/h), 
 
 Extension settings currently allow for:
 - Automatically create include guards
-- Open Cpp file after creation
-- Open H file after creation
+- Open C(pp) file after creation
+- Open H(pp) file after creation
 
 1) Right Clicking On Folder And Selecting "New .cpp/.h file"
 
@@ -36,6 +34,7 @@ Extension settings currently allow for:
 ![feature X](exampleCppFile.png)
 
 ### 1.0.0
+### 1.0.1
 
 Initial release.
 

@@ -4,7 +4,7 @@
   "description": "Adds a context menu item to folders to add a C/Cpp and a H/Hpp file at the same time",
   "icon": "cpphIcont.png",
   "repository": "https://github.com/Snolandia/cpph-fileadder",
-  "version": "1.0.0",
+  "version": "1.0.1",
 	"license": "MIT",
 	"author": "Snolandia",
   "publisher": "Snolandia",
