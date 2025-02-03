@@ -5,6 +5,8 @@
   "icon": "cpphIcont.png",
   "repository": "https://github.com/Snolandia/cpph-fileadder",
   "version": "1.0.0",
+	"license": "MIT",
+	"author": "Snolandia",
   "engines": {
     "vscode": "^1.96.0"
   },
